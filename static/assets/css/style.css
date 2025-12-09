@@ -4067,3 +4067,29 @@ input[type=range]:focus::-ms-fill-upper {
 .nav-pills .nav-link.active {
 	background-color: #1a1a1a;
 }
+
+/* Hide Blog Author Section (Valley's Admin) */
+.blog__details__author {
+	display: none !important;
+}
+
+/* Standardize Blog Image Sizes */
+.blog__item__pic {
+	height: 270px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.blog__item__pic a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.blog__item__pic img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}

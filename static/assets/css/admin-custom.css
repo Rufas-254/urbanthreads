@@ -415,3 +415,8 @@ table thead th a,
 .card:nth-child(4) {
     animation-delay: 0.3s;
 }
+
+/* Hide User Profile Panel (Valley's Admin) */
+.user-panel {
+    display: none !important;
+}
