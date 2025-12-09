@@ -1,0 +1,417 @@
+/* UrbanThreads Luxury Admin Theme - Custom Styles */
+
+/* Import Google Font - Playfair Display for luxury feel */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Root Variables for Luxury Color Scheme */
+:root {
+    --luxury-burgundy: #5C2E2E;
+    --luxury-burgundy-light: #7A4040;
+    --luxury-wine: #722F37;
+    --luxury-gold: #D4A574;
+    --luxury-gold-light: #E5C9A8;
+    --luxury-cream: #F5F0E8;
+    --luxury-dark: #1A1A1A;
+    --luxury-charcoal: #2D2D2D;
+    --card-shadow: 0 10px 40px rgba(92, 46, 46, 0.15);
+    --card-shadow-hover: 0 15px 50px rgba(92, 46, 46, 0.25);
+}
+
+/* Typography - Luxury Fonts */
+body,
+.main-header,
+.content-wrapper {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand-text,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.card-title,
+.content-header h1 {
+    font-family: 'Playfair Display', Georgia, serif !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+}
+
+/* Navbar Styling */
+.main-header.navbar {
+    background: linear-gradient(135deg, var(--luxury-burgundy) 0%, var(--luxury-wine) 100%) !important;
+    border-bottom: 2px solid var(--luxury-gold) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main-header .nav-link {
+    color: var(--luxury-cream) !important;
+    transition: all 0.3s ease;
+}
+
+.main-header .nav-link:hover {
+    color: var(--luxury-gold) !important;
+}
+
+/* Sidebar Styling */
+.main-sidebar {
+    background: linear-gradient(180deg, var(--luxury-burgundy) 0%, var(--luxury-dark) 100%) !important;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .nav-link {
+    color: var(--luxury-cream) !important;
+    border-radius: 8px;
+    margin: 4px 10px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(212, 165, 116, 0.2) !important;
+    color: var(--luxury-gold) !important;
+    transform: translateX(5px);
+}
+
+.sidebar .nav-link.active {
+    background: linear-gradient(90deg, var(--luxury-gold) 0%, var(--luxury-gold-light) 100%) !important;
+    color: var(--luxury-dark) !important;
+    font-weight: 600;
+}
+
+/* Brand Logo Section */
+.brand-link {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-bottom: 1px solid var(--luxury-gold) !important;
+    padding: 15px !important;
+}
+
+.brand-text {
+    color: var(--luxury-gold) !important;
+    font-size: 1.1rem !important;
+}
+
+/* Inject gem icon before brand text */
+.brand-text::before {
+    content: "\f3a5";
+    /* FontAwesome fa-gem unicode */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+    color: var(--luxury-gold);
+    font-size: 1rem;
+}
+
+/* Card Styling - Luxury Look */
+.card {
+    background: linear-gradient(145deg, #ffffff 0%, var(--luxury-cream) 100%) !important;
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: var(--card-shadow) !important;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    box-shadow: var(--card-shadow-hover) !important;
+    transform: translateY(-5px);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--luxury-burgundy), var(--luxury-gold), var(--luxury-burgundy));
+}
+
+.card-header {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.3) !important;
+    padding: 20px 25px !important;
+}
+
+.card-title {
+    color: var(--luxury-burgundy) !important;
+    font-size: 1.25rem !important;
+    margin: 0 !important;
+}
+
+.card-body {
+    padding: 25px !important;
+}
+
+/* Model Links in Cards */
+.card-body a {
+    color: var(--luxury-burgundy) !important;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.card-body a:hover {
+    color: var(--luxury-gold) !important;
+    transform: translateX(3px);
+}
+
+/* Add/Change Buttons */
+.addlink,
+.changelink,
+a.addlink,
+a.changelink {
+    display: inline-flex !important;
+    align-items: center !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    margin-left: 5px !important;
+}
+
+.addlink,
+a.addlink {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+}
+
+.addlink:hover,
+a.addlink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+.changelink,
+a.changelink {
+    background: linear-gradient(135deg, var(--luxury-burgundy) 0%, var(--luxury-wine) 100%) !important;
+    color: white !important;
+}
+
+.changelink:hover,
+a.changelink:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(92, 46, 46, 0.4);
+}
+
+/* Dashboard Cards Layout */
+#content-main .card {
+    margin-bottom: 25px !important;
+}
+
+/* Recent Actions Sidebar */
+.content-wrapper {
+    background: linear-gradient(135deg, #f8f9fa 0%, var(--luxury-cream) 100%) !important;
+}
+
+/* Recent Actions Panel */
+#recent-actions-module {
+    background: white !important;
+    border-radius: 16px !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+#recent-actions-module h3 {
+    color: var(--luxury-burgundy) !important;
+    border-bottom: 2px solid var(--luxury-gold) !important;
+    padding-bottom: 15px !important;
+}
+
+/* Action Items */
+.actionlist li {
+    border-left: 3px solid var(--luxury-gold) !important;
+    padding: 12px 15px !important;
+    margin-bottom: 8px !important;
+    background: rgba(212, 165, 116, 0.05) !important;
+    border-radius: 0 8px 8px 0 !important;
+    transition: all 0.3s ease;
+}
+
+.actionlist li:hover {
+    background: rgba(212, 165, 116, 0.15) !important;
+    transform: translateX(5px);
+}
+
+.actionlist a {
+    color: var(--luxury-burgundy) !important;
+    font-weight: 600 !important;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    background: transparent !important;
+}
+
+.breadcrumb-item a {
+    color: var(--luxury-burgundy) !important;
+}
+
+.breadcrumb-item.active {
+    color: var(--luxury-gold) !important;
+}
+
+/* Content Header */
+.content-header h1 {
+    color: var(--luxury-burgundy) !important;
+    font-size: 1.8rem !important;
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: var(--luxury-gold) !important;
+    box-shadow: 0 0 0 0.2rem rgba(212, 165, 116, 0.25) !important;
+}
+
+/* Button Overrides */
+.btn-primary {
+    background: linear-gradient(135deg, var(--luxury-burgundy) 0%, var(--luxury-wine) 100%) !important;
+    border: none !important;
+    padding: 10px 25px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(92, 46, 46, 0.4) !important;
+}
+
+.btn-warning,
+.btn-outline-warning {
+    color: var(--luxury-dark) !important;
+}
+
+/* Table Styling */
+.table th,
+.table thead th,
+table th,
+table thead th,
+#result_list th,
+#result_list thead th,
+.results th,
+.results thead th {
+    background: var(--luxury-burgundy) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 0.5px;
+}
+
+/* Ensure all table header links are also white */
+.table th a,
+.table thead th a,
+table th a,
+table thead th a,
+#result_list th a,
+#result_list thead th a,
+.results th a,
+.results thead th a {
+    color: #ffffff !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background: rgba(212, 165, 116, 0.05) !important;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(212, 165, 116, 0.15) !important;
+}
+
+/* Footer Styling - Hidden */
+.main-footer {
+    display: none !important;
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2) !important;
+    overflow: hidden;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(90deg, var(--luxury-gold) 0%, var(--luxury-gold-light) 100%) !important;
+    color: var(--luxury-dark) !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--luxury-cream);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--luxury-burgundy);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--luxury-wine);
+}
+
+/* Icon in Brand - Gem styling */
+.brand-link .fas.fa-gem {
+    color: var(--luxury-gold) !important;
+    font-size: 1.3rem !important;
+    margin-right: 10px !important;
+}
+
+/* Model list items styling */
+.model-list .model-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(212, 165, 116, 0.2);
+}
+
+.model-list .model-item:last-child {
+    border-bottom: none;
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.3s;
+}
