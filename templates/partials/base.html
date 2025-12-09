@@ -60,12 +60,12 @@
                 <ul>
                     <li><a href="{% url 'userauths:account' %}">My Account</a></li>
                     <li><a href="{% url 'core:wishlist' %}">My Wishlist</a></li>
-                    <li><a href="{% url 'userauths:sing-out' %}"><i class="fa fa-sign-out"></i>Sing out</a></li>
+                    <li><a href="{% url 'userauths:sing-out' %}"><i class="fa fa-sign-out"></i>Sign out</a></li>
                 </ul>
             </div>
             {% else %}
             <div style="margin-left: 15px;" class="header__top__right__auth">
-                <a href="{% url 'userauths:sing-in' %}"><i class="fa fa-user"></i>Sing in</a>
+                <a href="{% url 'userauths:sing-in' %}"><i class="fa fa-user"></i>Sign in</a>
             </div>
             {% endif %}
         </div>
@@ -141,13 +141,13 @@
                                 <ul>
                                     <li><a href="{% url 'userauths:account' %}">My Account</a></li>
                                     <li><a href="{% url 'core:wishlist' %}">My Wishlist</a></li>
-                                    <li><a href="{% url 'userauths:sing-out' %}"><i class="fa fa-sign-out"></i>Sing
+                                    <li><a href="{% url 'userauths:sing-out' %}"><i class="fa fa-sign-out"></i>Sign
                                             out</a></li>
                                 </ul>
                             </div>
                             {% else %}
                             <div class="header__top__right__auth">
-                                <a href="{% url 'userauths:sing-in' %}"><i class="fa fa-sign-in"></i>Sing in</a>
+                                <a href="{% url 'userauths:sing-in' %}"><i class="fa fa-sign-in"></i>Sign in</a>
                             </div>
                             {% endif %}
                         </div>
@@ -220,7 +220,8 @@
                                         class="cart-items-count">{{ request.session.cart_data_object|length
                                         }}</span></a></li>
                         </ul>
-                        <div class="header__cart__price">item: <span>KSh {{ cart_total_amount|floatformat:2 }}</span></div>
+                        <div class="header__cart__price">item: <span>KSh {{ cart_total_amount|floatformat:2 }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
